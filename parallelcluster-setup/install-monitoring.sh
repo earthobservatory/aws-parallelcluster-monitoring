@@ -35,8 +35,8 @@ apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # Start and enable Docker service
-sudo ctl start docker
-sudo systemctl enable docker
+systemctl start docker
+systemctl enable docker
 
 # Add cluster user to docker group
 usermod -a -G docker $cfn_cluster_user
