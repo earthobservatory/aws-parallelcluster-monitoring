@@ -13,9 +13,7 @@ HeadNode:
     OnNodeConfigured:
       Script: https://raw.githubusercontent.com/aws-samples/aws-parallelcluster-monitoring/main/post-install.sh
       Args:
-        - https://github.com/aws-samples/aws-parallelcluster-monitoring/tarball/main
-        - aws-parallelcluster-monitoring
-        - install-monitoring.sh
+        - v0.9
   Iam:
     AdditionalIamPolicies:
       - Policy: arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
@@ -45,9 +43,7 @@ Scheduling:
         OnNodeConfigured:
           Script: https://raw.githubusercontent.com/aws-samples/aws-parallelcluster-monitoring/main/post-install.sh
           Args:
-            - https://github.com/aws-samples/aws-parallelcluster-monitoring/tarball/main
-            - aws-parallelcluster-monitoring
-            - install-monitoring.sh
+            - v0.9
       Iam:
         AdditionalIamPolicies:
           - Policy: arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
